@@ -28,7 +28,7 @@ class Photo
     private $alt;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Accomodation::class, inversedBy="photos")
+     * @ORM\ManyToOne(targetEntity=Accomodation::class, inversedBy="photos", cascade={"persist"})
      * @ORM\JoinColumn(nullable=false)
      */
     private $accomodation;

@@ -48,9 +48,9 @@ class AccomodationFixtures extends Fixture implements DependentFixtureInterface
         $Accomodation3->setDescription("Lorem ipsum dolor sit amet, 
         consectetur adipisicing elit. Adipisci atque, consectetur 
         ");
-        $manager->persist($Accomodation2);
         $Accomodation3->setType($this->getReference("type-appart"));;
         $Accomodation3->setCategory($this->getReference("cat-standard"));
+        $manager->persist($Accomodation3);
         $this->addReference("Accomodation-3",$Accomodation3);
 
         $Accomodation4 = new Accomodation();
@@ -64,7 +64,7 @@ class AccomodationFixtures extends Fixture implements DependentFixtureInterface
         ");
         $Accomodation4->setType($this->getReference("type-room"));
         $Accomodation4->setCategory($this->getReference("cat-standard"));
-        $manager->persist($Accomodation2);
+        $manager->persist($Accomodation4);
         $this->addReference("Accomodation-4",$Accomodation4);
 
         $Accomodation5 = new Accomodation();
@@ -89,6 +89,7 @@ class AccomodationFixtures extends Fixture implements DependentFixtureInterface
         return[
             CategoryFixtures::class,
             TypeFixtures::class,
+
 
         ];
 

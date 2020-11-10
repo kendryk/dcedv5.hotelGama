@@ -269,10 +269,13 @@ class Accomodation
         return $this;
     }
 
+
     public function getTitle():string
     {
-        return $this->getCategory() . " " . $this->getType() ;
+        return $this->getCategory()->getName() . " " . $this->getType()->getName() ;
     }
+
+
     public function __toString(){
         return $this->getTitle();
     }
