@@ -1,4 +1,3 @@
-@import "~normalize.css";
 $fa-font-path: "~font-awesome/fonts";
 @import "~font-awesome/scss/font-awesome";
 
@@ -6,7 +5,7 @@ $fa-font-path: "~font-awesome/fonts";
 
 body {
   margin: 0;
-  background-image: url("../images/bg-pattern.png");
+  background-image: url("/images/bg-pattern.png");
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -265,3 +264,4 @@ ul.room-features {
     }
   }
 }
+
