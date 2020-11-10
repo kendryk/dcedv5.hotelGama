@@ -91,4 +91,6 @@ class Booking
 
         return $this;
     }
+
+
 }
