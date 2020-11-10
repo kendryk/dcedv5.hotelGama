@@ -22,6 +22,8 @@ class AccomodationFixtures extends Fixture implements DependentFixtureInterface
         ");
         $Accomodation1->setType($this->getReference("type-room"));
         $Accomodation1->setCategory($this->getReference("cat-standard"));
+        $Accomodation1->addAmenity($this->getReference('amn-kitchen'));
+
         $manager->persist($Accomodation1);
         $this->addReference("Accomodation-1",$Accomodation1);
 
@@ -36,6 +38,9 @@ class AccomodationFixtures extends Fixture implements DependentFixtureInterface
         ");
         $Accomodation2->setType($this->getReference("type-room"));
         $Accomodation2->setCategory($this->getReference("cat-standard"));
+        $Accomodation2->addAmenity($this->getReference('amn-kitchen'));
+        $Accomodation2->addAmenity($this->getReference('amn-access'));
+        $Accomodation2->addAmenity($this->getReference('amn-wifi'));
         $manager->persist($Accomodation2);
         $this->addReference("Accomodation-2",$Accomodation2);
 
@@ -50,6 +55,11 @@ class AccomodationFixtures extends Fixture implements DependentFixtureInterface
         ");
         $Accomodation3->setType($this->getReference("type-appart"));;
         $Accomodation3->setCategory($this->getReference("cat-standard"));
+        $Accomodation3->addAmenity($this->getReference('amn-kitchen'));
+        $Accomodation3->addAmenity($this->getReference('amn-access'));
+        $Accomodation3->addAmenity($this->getReference('amn-wifi'));
+        $Accomodation3->addAmenity($this->getReference('amn-shower'));
+        $Accomodation3->addAmenity($this->getReference('amn-coffee'));
         $manager->persist($Accomodation3);
         $this->addReference("Accomodation-3",$Accomodation3);
 
@@ -64,6 +74,9 @@ class AccomodationFixtures extends Fixture implements DependentFixtureInterface
         ");
         $Accomodation4->setType($this->getReference("type-room"));
         $Accomodation4->setCategory($this->getReference("cat-standard"));
+        $Accomodation4->addAmenity($this->getReference('amn-kitchen'));
+        $Accomodation4->addAmenity($this->getReference('amn-wifi'));
+        $Accomodation4->addAmenity($this->getReference('amn-shower'));
         $manager->persist($Accomodation4);
         $this->addReference("Accomodation-4",$Accomodation4);
 
@@ -78,6 +91,10 @@ class AccomodationFixtures extends Fixture implements DependentFixtureInterface
         ");
         $Accomodation5->setType($this->getReference("type-room"));
         $Accomodation5->setCategory($this->getReference("cat-lux"));
+        $Accomodation5->addAmenity($this->getReference('amn-kitchen'));
+        $Accomodation5->addAmenity($this->getReference('amn-wifi'));
+        $Accomodation5->addAmenity($this->getReference('amn-shower'));
+        $Accomodation5->addAmenity($this->getReference('amn-coffee'));
         $manager->persist($Accomodation5);
         $this->addReference("Accomodation-5",$Accomodation5);
 

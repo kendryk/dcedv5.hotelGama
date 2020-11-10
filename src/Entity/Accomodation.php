@@ -272,7 +272,7 @@ class Accomodation
 
     public function getTitle():string
     {
-        return $this->getCategory()->getName() . " " . $this->getType()->getName() ;
+        return $this->getType()->getName(). " " . $this->getCategory()->getName() ;
     }
 
 

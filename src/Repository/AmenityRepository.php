@@ -19,7 +19,9 @@ class AmenityRepository extends ServiceEntityRepository
         parent::__construct($registry, Amenity::class);
     }
 
-    // /**
+
+
+// /**
     //  * @return Amenity[] Returns an array of Amenity objects
     //  */
     /*
