@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} homepage {% endblock %}
+
+{% block body %}
+
+    <section class="page-header home-header container">
+        <img src="{{ asset ('images/home-header-bg.jpg') }}" class="img-responsive" alt="Gamma Hotel">
+    </section>
+
+
+    <section class="container home-content">
+        <h1>Bienvenue à l'hotel Gamma</h1>
+
+
+        {{ render(controller(
+            'App\\Controller\\TypeController::allMenu'
+        )) }}
+
+
+
+        <h2>Découvrez nos chambres</h2>
+        <div class="grid grid-rooms">
+
+            {% for accomodation in accomodations %}
+
+            <article>
+                <header>
+
+                    <img src="{{asset('uploads/'~ accomodation.photo)}}"
+                         class="img-responsive" alt="Chambre Standard">
+                </header>
+                <footer>
+                        <h3>{{ accomodation.title }}</h3>
+
+                    <ul class="room-features">
+                        <li><i class="fa fa-bed"></i>{{ accomodation.beds }}</li>
+                        <li><i class="fa fa-user"></i> {{ accomodation.persons }}</li>
+                        <li><i class="fa fa-expand"></i> {{ accomodation.size }}<sup>2</sup></li>
+                        <li><i class="fa fa-euro"></i> {{ accomodation.price }}</li>
+                    </ul>
+
+                    <a href=" {{ path('accomodation_show', {'id': accomodation.id}) }}" class="button button-primary">
+                        <i class="fa fa-eye"></i>
+                        Voir plus
+                    </a>
+                </footer>
+            </article>
+
+            {% endfor %}
+        </div>
+    </section>
+
+{% endblock %}

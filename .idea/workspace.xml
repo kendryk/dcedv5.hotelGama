@@ -10,15 +10,31 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af77b01a-a0b1-473d-b446-2419f3098a76" name="Default Changelist" comment="Installation" />
+    <list default="true" id="af77b01a-a0b1-473d-b446-2419f3098a76" name="Default Changelist" comment="création des controleur">
+      <change afterPath="$PROJECT_DIR$/templates/type/_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/type/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/type/typeNavchoix.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/AccomodationRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/AccomodationRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Twig" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -126,6 +142,12 @@
       <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/vendor/twig/twig" />
       <path value="$PROJECT_DIR$/vendor/twig/extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/uid" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/vendor/easycorp/easyadmin-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1k3XApuuWT9ek9GjxQs5q2NBDJZ" />
@@ -136,6 +158,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/type" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -143,8 +166,23 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\MAMP\htdocs\dcdev5\hotelgamma\hotel-gamma\src\copi" />
+      <recent name="C:\MAMP\htdocs\dcdev5\hotelgamma\hotel-gamma\public\uploads" />
+      <recent name="C:\MAMP\htdocs\dcdev5\hotelgamma\hotel-gamma\public\images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\MAMP\htdocs\dcdev5\hotelgamma\hotel-gamma\templates\type" />
+      <recent name="C:\MAMP\htdocs\dcdev5\hotelgamma\hotel-gamma\public\build" />
+      <recent name="C:\MAMP\htdocs\dcdev5\hotelgamma\hotel-gamma\assets" />
+      <recent name="C:\MAMP\htdocs\dcdev5\hotelgamma\hotel-gamma\assets\styles" />
+      <recent name="C:\MAMP\htdocs\dcdev5\hotelgamma\hotel-gamma\src\DataFixtures" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -154,7 +192,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604930113124</updated>
-      <workItem from="1604930119387" duration="6979000" />
+      <workItem from="1604930119387" duration="67073000" />
+      <workItem from="1605030324947" duration="16967000" />
     </task>
     <task id="LOCAL-00001" summary="Installation">
       <created>1604935452828</created>
@@ -163,7 +202,63 @@
       <option name="project" value="LOCAL" />
       <updated>1604935452828</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Modification Table">
+      <created>1604937495949</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604937495949</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Modification Table">
+      <created>1604937530875</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604937530875</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Création Fixtures">
+      <created>1605000784707</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605000784707</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Création Fixtures">
+      <created>1605000796669</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605000796669</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Modification Fixtures">
+      <created>1605003670317</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1605003670317</updated>
+    </task>
+    <task id="LOCAL-00007" summary="mise en place de webpack">
+      <created>1605007550471</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1605007550471</updated>
+    </task>
+    <task id="LOCAL-00008" summary="1er excercice + creation crud">
+      <created>1605019764167</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1605019764167</updated>
+    </task>
+    <task id="LOCAL-00009" summary="création des controleur">
+      <created>1605029682336</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1605029682336</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,12 +274,24 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Installation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Installation" />
+    <MESSAGE value="Modification Table" />
+    <MESSAGE value="Création Fixtures" />
+    <MESSAGE value="Modification Fixtures + debut controller" />
+    <MESSAGE value="Modification Fixtures" />
+    <MESSAGE value="mise en place de webpack" />
+    <MESSAGE value="1er excercice + creation crud" />
+    <MESSAGE value="création des controleur" />
+    <option name="LAST_COMMIT_MESSAGE" value="création des controleur" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="428" y="188" key="#Notifications" timestamp="1605029718797">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="428" y="188" key="#Notifications/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1605029718797" />
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604935328314">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -193,21 +300,55 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="445" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1604935260815" />
+    <state x="488" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1604953008973">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="46" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1604953008973" />
+    <state x="452" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605000548388">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="452" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1605000548388" />
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605041644166">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1605041644166" />
     <state x="451" y="66" key="RollbackChangesDialog" timestamp="1604935419959">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="451" y="66" key="RollbackChangesDialog/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1604935419959" />
-    <state x="184" y="9" key="SettingsEditor" timestamp="1604935560850">
+    <state x="184" y="9" key="SettingsEditor" timestamp="1604994593618">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="9" key="SettingsEditor/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1604935560850" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1604935701751">
+    <state x="184" y="9" key="SettingsEditor/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1604994593618" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1605029688299">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1604935701751" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1605029688299" />
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604930518739">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1604930518739" />
+    <state x="0" y="0" width="1040" height="654" key="dock-window-1" timestamp="1604996191908">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="0" y="0" width="1040" height="654" key="dock-window-1/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1604996191908" />
+    <state x="1999" y="-330" width="654" height="991" key="dock-window-2" timestamp="1605022141653">
+      <screen x="1366" y="-330" width="1280" height="984" />
+    </state>
+    <state x="1999" y="-330" width="654" height="991" key="dock-window-2/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1605022141653" />
+    <state x="34" y="62" width="1043" height="687" key="dock-window-3" timestamp="1605031916623">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="34" y="62" width="1043" height="687" key="dock-window-3/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1605031916623" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Entity/Accomodation.php</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

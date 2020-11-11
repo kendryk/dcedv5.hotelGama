@@ -31,6 +31,7 @@ class AccomodationRepository extends ServiceEntityRepository
         ->innerJoin('a.type', 'type') // INNER JOIN type ON type.id = Accomodation.type_id
         ->innerJoin('a.category', 'category') // INNER JOIN type ON category.id = Accomodation.category_id
         ->innerJoin('a.amenity', 'amenity') // INNER JOIN type ON amenity.id = Accomodation.amenity_id
+
         ;
 
 
