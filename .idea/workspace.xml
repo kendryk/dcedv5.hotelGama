@@ -10,15 +10,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af77b01a-a0b1-473d-b446-2419f3098a76" name="Default Changelist" comment="création des controleur">
-      <change afterPath="$PROJECT_DIR$/templates/type/_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/type/new.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/type/typeNavchoix.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="af77b01a-a0b1-473d-b446-2419f3098a76" name="Default Changelist" comment="creation login">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/AccomodationRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/AccomodationRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AccomodationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AccomodationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/accomodation/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accomodation/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/default/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/default/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +193,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604930113124</updated>
       <workItem from="1604930119387" duration="67073000" />
-      <workItem from="1605030324947" duration="16967000" />
+      <workItem from="1605030324947" duration="21162000" />
     </task>
     <task id="LOCAL-00001" summary="Installation">
       <created>1604935452828</created>
@@ -258,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605029682336</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="creation login">
+      <created>1605085563791</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1605085563791</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +292,8 @@
     <MESSAGE value="mise en place de webpack" />
     <MESSAGE value="1er excercice + creation crud" />
     <MESSAGE value="création des controleur" />
-    <option name="LAST_COMMIT_MESSAGE" value="création des controleur" />
+    <MESSAGE value="creation login" />
+    <option name="LAST_COMMIT_MESSAGE" value="creation login" />
   </component>
   <component name="WindowStateProjectService">
     <state x="428" y="188" key="#Notifications" timestamp="1605029718797">
@@ -320,18 +328,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1604994593618" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1605029688299">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1605085563527">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1605029688299" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1605085563527" />
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604930518739">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1604930518739" />
-    <state x="0" y="0" width="1040" height="654" key="dock-window-1" timestamp="1604996191908">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="1366" y="-123" width="1034" height="715" maximized="true" key="dock-window-1" timestamp="1605086405236">
+      <screen x="1366" y="-330" width="1280" height="984" />
     </state>
-    <state x="0" y="0" width="1040" height="654" key="dock-window-1/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1604996191908" />
+    <state x="1366" y="-123" width="1034" height="715" maximized="true" key="dock-window-1/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1605086405236" />
     <state x="1999" y="-330" width="654" height="991" key="dock-window-2" timestamp="1605022141653">
       <screen x="1366" y="-330" width="1280" height="984" />
     </state>

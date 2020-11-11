@@ -11,6 +11,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Security\Core\User\UserInterface;
 
 class DefaultController extends AbstractController
 {
@@ -30,6 +31,10 @@ class DefaultController extends AbstractController
 
         ]);
     }
+
+
+
+
 
    // /**
    // * @Route("/{id}{name}", name="homepage" methods={"GET","POST"})

@@ -10,7 +10,12 @@
 
 
     <section class="container home-content">
-        <h1>Bienvenue à l'hotel Gamma</h1>
+        {% if app.user %}
+
+        <h1>Bienvenue   {{ app.user.uName }} à l'hotel Gamma</h1>
+        {% else %}
+            <h1>Bienvenue à l'hotel Gamma</h1>
+        {% endif %}
 
 
         {{ render(controller(

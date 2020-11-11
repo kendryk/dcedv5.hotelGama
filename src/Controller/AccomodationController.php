@@ -15,15 +15,15 @@ use Symfony\Component\Routing\Annotation\Route;
  */
 class AccomodationController extends AbstractController
 {
-    /**
-     * @Route("/", name="accomodation_index", methods={"GET"})
+    ///**
+    /* * @Route("/", name="accomodation_index", methods={"GET"})
      */
-    public function index(AccomodationRepository $accomodationRepository): Response
+    /*public function index(AccomodationRepository $accomodationRepository): Response
     {
         return $this->render('accomodation/index.html.twig', [
             'accomodations' => $accomodationRepository->findAll(),
         ]);
-    }
+    } */
 
 
     //**
