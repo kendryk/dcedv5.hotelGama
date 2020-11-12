@@ -3,6 +3,7 @@
 {% block title %}Nouveau logement{% endblock %}
 
 {% block body %}
+    {% if is_granted('ROLE_ADMIN') %}
     <section class="container home-content">
     <h1>Créer un nouveau logement</h1>
 
@@ -11,4 +12,6 @@
     <a class="btn btn-primary" href="{{ path('accomodation_index') }}">Revenir à la liste</a>
 
     </section>
+
+    {% endif %}
 {% endblock %}

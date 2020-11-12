@@ -4,7 +4,6 @@ namespace App\Form;
 
 use App\Entity\Accomodation;
 use App\Entity\Category;
-
 use App\Entity\Type;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
@@ -62,6 +61,7 @@ class AccomodationType extends AbstractType
     {
         $resolver->setDefaults([
             'data_class' => Accomodation::class,
+
         ]);
     }
 }

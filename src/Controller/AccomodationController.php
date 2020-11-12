@@ -80,9 +80,10 @@ class AccomodationController extends AbstractController
 
     /**
      * @Route("/new", name="accomodation_new", methods={"GET","POST"})
+     *
      */
 
-    public function new(Request $request, SluggerInterface $slugger): Response
+    public function new(Request $request, SluggerInterface $slugger ): Response
     {
         $accomodation = new Accomodation();
 
@@ -126,7 +127,7 @@ class AccomodationController extends AbstractController
         ]);
     }
 
-
+///,requirements={"id"="\d+"}
     /**
     * @Route("/{id}", name="accomodation_show", methods={"GET"})
      */
