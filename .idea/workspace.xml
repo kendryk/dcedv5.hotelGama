@@ -10,12 +10,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af77b01a-a0b1-473d-b446-2419f3098a76" name="Default Changelist" comment="finalisation todo 4 fonctionnement page de recherche">
+    <list default="true" id="af77b01a-a0b1-473d-b446-2419f3098a76" name="Default Changelist" comment="Création CRUD de booking et mise ne form CSS de USER">
+      <change afterPath="$PROJECT_DIR$/templates/accomodation/_delete_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/accomodation/_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/accomodation/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/accomodation/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/accomodation/new.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/UserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/UserType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/accomodation/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accomodation/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AccomodationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AccomodationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/booking/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/booking/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/user/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +165,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/type" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/accomodation" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -169,11 +179,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\MAMP\htdocs\dcdev5\hotelgamma\hotel-gamma\templates\accomodation" />
       <recent name="C:\MAMP\htdocs\dcdev5\hotelgamma\hotel-gamma\templates\type" />
       <recent name="C:\MAMP\htdocs\dcdev5\hotelgamma\hotel-gamma\public\build" />
       <recent name="C:\MAMP\htdocs\dcdev5\hotelgamma\hotel-gamma\assets" />
       <recent name="C:\MAMP\htdocs\dcdev5\hotelgamma\hotel-gamma\assets\styles" />
-      <recent name="C:\MAMP\htdocs\dcdev5\hotelgamma\hotel-gamma\src\DataFixtures" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\MAMP\htdocs\dcdev5\hotelgamma\hotel-gamma\src\copi" />
@@ -192,7 +202,7 @@
       <workItem from="1604930119387" duration="67073000" />
       <workItem from="1605030324947" duration="36766000" />
       <workItem from="1605111303475" duration="391000" />
-      <workItem from="1605112332997" duration="34834000" />
+      <workItem from="1605112332997" duration="38378000" />
     </task>
     <task id="LOCAL-00001" summary="Installation">
       <created>1604935452828</created>
@@ -278,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605174012832</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Création CRUD de booking et mise ne form CSS de USER">
+      <created>1605182009028</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1605182009028</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,7 +325,8 @@
     <MESSAGE value="creation login" />
     <MESSAGE value="securisation et creation CRUD user" />
     <MESSAGE value="finalisation todo 4 fonctionnement page de recherche" />
-    <option name="LAST_COMMIT_MESSAGE" value="finalisation todo 4 fonctionnement page de recherche" />
+    <MESSAGE value="Création CRUD de booking et mise ne form CSS de USER" />
+    <option name="LAST_COMMIT_MESSAGE" value="Création CRUD de booking et mise ne form CSS de USER" />
   </component>
   <component name="WindowStateProjectService">
     <state x="428" y="188" key="#Notifications" timestamp="1605029718797">
@@ -347,18 +365,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1604994593618" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1605174017432">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1605182011959">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1605174017432" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1605182011959" />
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604930518739">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1604930518739" />
-    <state x="1366" y="-123" width="1034" height="715" maximized="true" key="dock-window-1" timestamp="1605086405236">
-      <screen x="1366" y="-330" width="1280" height="984" />
+    <state x="676" y="0" width="697" height="735" key="dock-window-1" timestamp="1605184954348">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="1366" y="-123" width="1034" height="715" maximized="true" key="dock-window-1/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1605086405236" />
+    <state x="676" y="0" width="697" height="735" key="dock-window-1/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1605184954348" />
     <state x="1999" y="-330" width="654" height="991" key="dock-window-2" timestamp="1605022141653">
       <screen x="1366" y="-330" width="1280" height="984" />
     </state>

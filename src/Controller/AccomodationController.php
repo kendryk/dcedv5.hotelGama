@@ -35,10 +35,10 @@ class AccomodationController extends AbstractController
     }
 
 
-    //**
-    // * @Route("/new", name="accomodation_new", methods={"GET","POST"})
-    // */
-    /*
+    /**
+     * @Route("/new", name="accomodation_new", methods={"GET","POST"})
+     */
+
     public function new(Request $request): Response
     {
         $accomodation = new Accomodation();
@@ -58,7 +58,7 @@ class AccomodationController extends AbstractController
             'form' => $form->createView(),
         ]);
     }
-    */
+
 
     /**
     * @Route("/{id}", name="accomodation_show", methods={"GET"})
@@ -71,20 +71,20 @@ class AccomodationController extends AbstractController
     }
 
 
-    //**
-    // * @Route("/new", name="accomodation_new", methods={"GET"})
-   //  */
-   /* public function accomodations(Accomodation $accomodation): Response
+    /**
+     * @Route("/new", name="accomodation_new", methods={"GET"})
+    */
+    public function accomodations(Accomodation $accomodation): Response
     {
         return $this->render('accomodation/new.html.twig', [
             'accomodation' => $accomodation,
         ]);
-    }*/
+    }
 
-    //**
-    // * @Route("/{id}/edit", name="accomodation_edit", methods={"GET","POST"})
-    // */
-    /*
+    /**
+     * @Route("/{id}/edit", name="accomodation_edit", methods={"GET","POST"})
+    */
+
     public function edit(Request $request, Accomodation $accomodation): Response
     {
         $form = $this->createForm(AccomodationType::class, $accomodation);
@@ -101,12 +101,12 @@ class AccomodationController extends AbstractController
             'form' => $form->createView(),
         ]);
     }
+
+
+    /**
+    * @Route("/{id}", name="accomodation_delete", methods={"DELETE"})
     */
 
-    //**
-    // * @Route("/{id}", name="accomodation_delete", methods={"DELETE"})
-    // */
-    /*
     public function delete(Request $request, Accomodation $accomodation): Response
     {
         if ($this->isCsrfTokenValid('delete'.$accomodation->getId(), $request->request->get('_token'))) {
@@ -117,5 +117,5 @@ class AccomodationController extends AbstractController
 
         return $this->redirectToRoute('accomodation_index');
     }
-    */
+
 }

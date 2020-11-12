@@ -1,12 +1,12 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}User index{% endblock %}
+{% block title %}Index Utilisateur{% endblock %}
 
 {% block body %}
 
     {% if is_granted('ROLE_ADMIN') %}
 <section class="container home-content">
-    <h1>User index</h1>
+    <h1>Index Utilisateur</h1>
 
     <table class="table">
         <thead>
@@ -26,19 +26,21 @@
                 <td>{{ user.firstName }}</td>
                 <td>{{ user.lastName }}</td>
                 <td>
-                    <a href="{{ path('user_show', {'id': user.id}) }}">show</a>
-                    <a href="{{ path('user_edit', {'id': user.id}) }}">edit</a>
+                    <a class="btn btn-info" href="{{ path('user_show', {'id': user.id}) }}">Voir</a>
+                    <a class="btn btn-primary" href="{{ path('user_edit', {'id': user.id}) }}">éditer</a>
                 </td>
             </tr>
         {% else %}
             <tr>
-                <td colspan="7">aucun element trouver</td>
+                <td colspan="7">aucun elements trouver</td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-    <a href="{{ path('user_new') }}">Create new</a>
+    <a class="btn btn-info" href="{{ path('user_new') }}">Nouvel Utilisateur</a>
+    <a class="btn btn-warning" href="{{ path('booking_index') }}">Nos Réservations</a>
+    <a class="btn btn-info" href="{{ path('accomodation_index') }}">Nos logements</a>
 
 </section>
 

@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nouveau logement{% endblock %}
+
+{% block body %}
+    <section class="container home-content">
+    <h1>Créer un nouveau logement</h1>
+
+    {{ include('accomodation/_form.html.twig') }}
+
+    <a class="btn btn-primary" href="{{ path('accomodation_index') }}">Revenir à la liste</a>
+
+    </section>
+{% endblock %}
