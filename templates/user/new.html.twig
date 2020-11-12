@@ -10,16 +10,16 @@
     {% if is_granted('ROLE_ADMIN') %}
 
     <section class="container home-content">
-    <h1>Create new User</h1>
+    <h1>Créer un nouveaux Utilsateur</h1>
 
     {{ include('user/_form.html.twig') }}
 
-    <a href="{{ path('user_index') }}">back to list</a>
+    <a class="btn btn-info" href="{{ path('user_index') }}">back to list</a>
 
     </section>
 {% else %}
     <section class="container home-content">
-        <h1>    Vous etes perdu?     </h1>
+        <h1>    Vous êtes perdu?     </h1>
     </section>
 
     <script type="text/javascript">
@@ -28,5 +28,5 @@
 
 
 {% endif %}
-    </section>
+
 {% endblock %}

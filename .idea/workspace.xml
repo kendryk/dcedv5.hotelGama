@@ -10,26 +10,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af77b01a-a0b1-473d-b446-2419f3098a76" name="Default Changelist" comment="securisation et creation CRUD user">
-      <change afterPath="$PROJECT_DIR$/src/Entity/MinMax.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/accomodation/all.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/hotel-gamma.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hotel-gamma.iml" afterDir="false" />
+    <list default="true" id="af77b01a-a0b1-473d-b446-2419f3098a76" name="Default Changelist" comment="finalisation todo 4 fonctionnement page de recherche">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AccomodationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AccomodationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DefaultController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/AccomodationRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/AccomodationRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/TypeRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/TypeRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/UserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/UserType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/accomodation/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accomodation/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/default/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/default/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/type/typeNavchoix.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/user/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +192,7 @@
       <workItem from="1604930119387" duration="67073000" />
       <workItem from="1605030324947" duration="36766000" />
       <workItem from="1605111303475" duration="391000" />
-      <workItem from="1605112332997" duration="26859000" />
+      <workItem from="1605112332997" duration="34834000" />
     </task>
     <task id="LOCAL-00001" summary="Installation">
       <created>1604935452828</created>
@@ -285,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605089684380</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="finalisation todo 4 fonctionnement page de recherche">
+      <created>1605174012832</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1605174012832</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,7 +307,8 @@
     <MESSAGE value="création des controleur" />
     <MESSAGE value="creation login" />
     <MESSAGE value="securisation et creation CRUD user" />
-    <option name="LAST_COMMIT_MESSAGE" value="securisation et creation CRUD user" />
+    <MESSAGE value="finalisation todo 4 fonctionnement page de recherche" />
+    <option name="LAST_COMMIT_MESSAGE" value="finalisation todo 4 fonctionnement page de recherche" />
   </component>
   <component name="WindowStateProjectService">
     <state x="428" y="188" key="#Notifications" timestamp="1605029718797">
@@ -337,10 +331,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="452" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1605000548388" />
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605041644166">
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605177912597">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1605041644166" />
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1605177912597" />
     <state x="429" y="87" key="NewPhpClassDialog" timestamp="1605128782231">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -353,10 +347,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1604994593618" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1605089692146">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1605174017432">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1605089692146" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1605174017432" />
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604930518739">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
