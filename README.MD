@@ -15,7 +15,7 @@ DO
 DO    
     
     Générer une interface d'administration sécurisée
-    
+DO   
     
     Permettre aux internautes d'effectuer une réservation en ligne (connexion nécessaire)
     

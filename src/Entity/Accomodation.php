@@ -279,4 +279,6 @@ class Accomodation
     public function __toString(){
         return $this->getTitle();
     }
+
+
 }

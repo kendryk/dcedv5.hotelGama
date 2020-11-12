@@ -17,6 +17,7 @@
             <h1>Bienvenue à l'hotel Gamma</h1>
         {% endif %}
 
+        {# TODO Modifier la page d'accueil pour afficher uniquement les 3 logements les plus réservés #}
 
           <form class="form-search" action= "{{ path ('homepage')}}" method='GET' autocomplete="off">
             <div class="form-group">
@@ -79,8 +80,8 @@
                     <ul class="room-features">
                         <li><i class="fa fa-bed"></i>{{ accomodation.beds }}</li>
                         <li><i class="fa fa-user"></i> {{ accomodation.persons }}</li>
-                        <li><i class="fa fa-expand"></i> {{ accomodation.size }}<sup>2</sup></li>
-                        <li><i class="fa fa-euro"></i> {{ accomodation.price }}</li>
+                        <li><i class="fa fa-expand"></i> {{ accomodation.size }}m<sup>2</sup></li>
+                        <li><i class="fa fa-euro"></i> {{ accomodation.price }}€</li>
                     </ul>
 
                     <a href=" {{ path('accomodation_show', {'id': accomodation.id}) }}" class="button button-primary">

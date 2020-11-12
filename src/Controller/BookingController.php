@@ -15,13 +15,20 @@ use Symfony\Component\Routing\Annotation\Route;
  */
 class BookingController extends AbstractController
 {
+
+//TODO FAIRE AFFICHER LA LISTES DES LOGEMENTS DE L'USER
+
     /**
      * @Route("/", name="booking_index", methods={"GET"})
      */
     public function index(BookingRepository $bookingRepository): Response
     {
+        $bookings = $bookingRepository->findAll();
+        $user = $this->getUser();
+
         return $this->render('booking/index.html.twig', [
-            'bookings' => $bookingRepository->findAll(),
+            'bookings' => $bookings,
+            'user' => $user,
         ]);
     }
 

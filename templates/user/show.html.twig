@@ -9,7 +9,7 @@
 </section>
 
 <section class="container home-content ">
-    <h1>{{ app.user.uName }}</h1>
+    <h1>{{ app.user.uName }} Vous êtes sur votre page de profil</h1>
 
     <div class="container grid grid-rooms">
         <table class="table">
@@ -32,19 +32,25 @@
         </table>
 
 
-
-
     {% if is_granted('ROLE_ADMIN') %}
         <h2> Administrator </h2>
 
         <a class="btn btn-info" href="{{ path('user_index') }} ">
             <h2> INDEX </h2> </a>
 
-
     {% elseif is_granted('ROLE_USER') %}
-        <h2> Utilisateur </h2>
+            <h2> Utilisateur </h2>
+
+        <h2> <a class="btn btn-info " href="{{ path('user_edit', { 'id':user.id}) }} ">
+
+            Modifier le Profil </a> </h2>
+        <h2> <a class="btn btn-info " href="{{ path('booking_index', { 'id':user.id}) }} ">
+                Voir mes réservation </a> </h2>
+
+
     {% else %}
         <h2> Anonymous </h2>
+        <p>Comment êtes vous arrivez ici?</p>
     {% endif %}
 
     </div>

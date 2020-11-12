@@ -3,9 +3,11 @@
 {% block title %}Edition des logements{% endblock %}
 
 {% block body %}
+    {% if is_granted('ROLE_ADMIN') %}
+
     <section class="container home-content">
 
-    <h1>Edition des logements </h1>
+    <h1>Edition des logements {{ app.user.uName }}</h1>
 
     {{ include('accomodation/_form.html.twig', {'button_label': 'Update'}) }}
 
@@ -14,4 +16,7 @@
     {{ include('accomodation/_delete_form.html.twig') }}
 
     </section>
+
+    {% endif %}
+
 {% endblock %}

@@ -6,25 +6,24 @@
 
     {% if is_granted('ROLE_ADMIN') %}
 <section class="container home-content">
-    <h1>Index Utilisateur</h1>
+    <h1>Table index des Utilisateurs{{ app.user.uName }} </h1>
 
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
-                <th>Email</th>
                 <th>First_name</th>
                 <th>Last_name</th>
+                <th>Email</th>
                 <th>actions</th>
             </tr>
         </thead>
         <tbody>
         {% for user in users %}
             <tr>
-                <td>{{ user.id }}</td>
-                <td>{{ user.email }}</td>
+
                 <td>{{ user.firstName }}</td>
                 <td>{{ user.lastName }}</td>
+                <td>{{ user.email }}</td>
                 <td>
                     <a class="btn btn-info" href="{{ path('user_show', {'id': user.id}) }}">Voir</a>
                     <a class="btn btn-primary" href="{{ path('user_edit', {'id': user.id}) }}">éditer</a>
@@ -32,9 +31,10 @@
             </tr>
         {% else %}
             <tr>
-                <td colspan="7">aucun elements trouver</td>
+                <td>Aucun elements trouver</td>
             </tr>
         {% endfor %}
+
         </tbody>
     </table>
 
@@ -43,17 +43,5 @@
     <a class="btn btn-info" href="{{ path('accomodation_index') }}">Nos logements</a>
 
 </section>
-
-
-{% else %}
-    <section class="container home-content">
-        <h1>    Vous etes perdu?     </h1>
-    </section>
-    <script type="text/javascript">
-        document.write("window.location.href = " + '{{ path('homepage') }}' );
-    </script>
-
-{% endif %}
-
-
+    {% endif %}
 {% endblock %}

@@ -4,12 +4,11 @@
 
 {% block body %}
     <section class="container home-content">
-    <h1>Index des réservations</h1>
-
+    <h1> Listes des logements en location {{ app.user.uName }} </h1>
+    {% if is_granted('ROLE_ADMIN') %}
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
                 <th>Logement</th>
                 <th>Date de Départ</th>
                 <th>Date de Fin</th>
@@ -17,14 +16,12 @@
                 <th>actions</th>
             </tr>
         </thead>
-        <tbody>
+            <tbody>
         {% for booking in bookings %}
             <tr>
-                <td>{{ booking.id }}</td>
                 <td>{{ booking.accomodation }}</td>
-
-                <td>{{ booking.dateStart ? booking.dateStart|date('d-m-Y H:i') : '' }}</td>
-                <td>{{ booking.dateEnd ? booking.dateEnd|date('d-m-Y H:i') : '' }}</td>
+                <td>{{ booking.dateStart ? booking.dateStart|date('d-m-Y H\\h:i') : '' }}</td>
+                <td>{{ booking.dateEnd ? booking.dateEnd|date('d-m-Y H\\h:i') : '' }}</td>
                 <td>{{ booking.user }}</td>
                 <td>
                     <a class="btn btn-info " href="{{ path('booking_show', {'id': booking.id}) }}"> Voir </a>
@@ -33,14 +30,56 @@
             </tr>
         {% else %}
             <tr>
-                <td colspan="4">no records found</td>
+                <td> Désolé nous ne trouvons pas de résultat </td>
             </tr>
         {% endfor %}
+
         </tbody>
     </table>
-
         <a class="btn btn-primary" href="{{ path('booking_new') }}">Créer un nouveaux</a>
         <a class="btn btn-warning" href="{{ path('user_index') }}"> les utilisateurs</a>
         <a class="btn btn-info" href="{{ path('accomodation_index') }}">Nos logements</a>
     </section>
+
+
+        {% elseif is_granted('ROLE_USER') %}
+
+            <table class="table">
+            <thead>
+            <tr>
+                <th>Logement</th>
+                <th>Date de Départ</th>
+                <th>Date de Fin</th>
+                <th>actions</th>
+            </tr>
+            </thead>
+
+            {% for useB in user.bookings %}
+            <tr>
+                <td>{{ useB.accomodation.title }}</td>
+                <td>{{ useB.dateStart|date('d-m-Y H:i') }}</td>
+                <td>{{ useB.dateEnd|date('d-m-Y H:i') }}</td>
+                <td>
+                    <a class="btn btn-info " href="{{ path('accomodation_show', {'id': useB.accomodation.id}) }}"> Voir </a>
+                </td>
+            </tr>
+
+            </table>
+
+        {% else %}
+            <tr>
+                <td> Désolé nous ne trouvons pas de résultat </td>
+            </tr>
+
+            {% endfor %}
+
+        {% else %}
+            <section class="container home-content">
+                <h1>    Vous êtes perdu?     </h1>
+            </section>
+            <script type="text/javascript">
+                document.write("window.location.href = " + '{{ path('homepage') }}' );
+            </script>
+        {% endif %}
+
 {% endblock %}

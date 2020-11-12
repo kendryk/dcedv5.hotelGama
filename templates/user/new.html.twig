@@ -1,32 +1,23 @@
 {% extends 'base.html.twig' %}
 
-
-
-
 {% block title %}Nouvel Utilisateur{% endblock %}
 
 {% block body %}
-
-    {% if is_granted('ROLE_ADMIN') %}
 
     <section class="container home-content">
     <h1>Créer un nouveaux Utilisateur</h1>
 
     {{ include('user/_form.html.twig') }}
 
-    <a class="btn btn-info" href="{{ path('user_index') }}">Revenir à la liste</a>
+
+        {% if is_granted('ROLE_ADMIN') %}
+
+    <a class="btn btn-info" href="{{ path('user_index') }}"> Revenir à la liste</a>
+
+
+        {% endif %}
 
     </section>
-{% else %}
-    <section class="container home-content">
-        <h1>    Vous êtes perdu?     </h1>
-    </section>
 
-    <script type="text/javascript">
-        document.write("window.location.href = " + '{{ path('homepage') }}' );
-    </script>
-
-
-{% endif %}
 
 {% endblock %}

@@ -37,7 +37,7 @@ class AccomodationRepository extends ServiceEntityRepository
             ->getResult();
     }
 
-    //Récuperer la liste des logments avec la barre de recherche(homepage)
+    //Récuperer la liste des logements avec la barre de recherche(homepage)
     public function findByPrice($type, $prixMin, $prixMax)
     {
         $qb = $this->createQueryBuilder('a');
@@ -58,6 +58,28 @@ class AccomodationRepository extends ServiceEntityRepository
               ->getResult()
         ;
     }
+
+    //Récuperer les dates de réservation de la page show accomodation
+    public function findBooking($date_start, $date_end)
+    {
+        $qb = $this->createQueryBuilder('a'); //accomodation
+
+        $qb = $qb-> addSelect('type')  // SELECT a.*,type.*
+
+        -> innerJoin('a.type', 'type') // INNER JOIN type ON type.id = Accomodation.type_id
+        -> andWhere('type.name = :type')
+            -> setParameter('type', $date_start)
+            -> setParameter('min', $date_end)
+            ->innerJoin('a.booking', 'booking') // INNER JOIN type ON category.id = Accomodation.category_id
+            ;
+
+        return $qb
+            ->getQuery()
+            ->getResult()
+            ;
+    }
+
+
 
 
 

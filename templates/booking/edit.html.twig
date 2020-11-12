@@ -3,9 +3,11 @@
 {% block title %}Edition de Réservation{% endblock %}
 
 {% block body %}
+    {% if is_granted('ROLE_ADMIN') %}
+
     <section class="container home-content">
 
-    <h1>Edition de Réservation </h1>
+    <h1>Edition de Réservation   {{ app.user.uName }}</h1>
 
     {{ include('booking/_form.html.twig', {'button_label': 'Update'}) }}
 
@@ -14,4 +16,13 @@
     {{ include('booking/_delete_form.html.twig') }}
 
     </section>
+    {% else %}
+        <section class="container home-content">
+            <h1>    Vous êtes perdu?     </h1>
+        </section>
+        <script type="text/javascript">
+            document.write("window.location.href = " + '{{ path('homepage') }}' );
+        </script>
+
+    {% endif %}
 {% endblock %}

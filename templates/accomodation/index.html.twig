@@ -1,37 +1,31 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Booking index{% endblock %}
+{% block title %}Index des logements{% endblock %}
 
 {% block body %}
+    {% if is_granted('ROLE_ADMIN') %}
     <section class="container home-content">
-    <h1>Index des réservations</h1>
+    <h1>Index des logements {{ app.user.uName }}</h1>
 
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
                 <th>beds</th>
                 <th>persons</th>
                 <th>size</th>
                 <th>price</th>
                 <th>description</th>
-
-
             </tr>
         </thead>
         <tbody>
         {% for accomodation in accomodations %}
             <tr>
-                <td>{{ accomodation.id }}</td>
+
                 <td>{{ accomodation.beds }}</td>
                 <td>{{ accomodation.persons }}</td>
-                <td>{{ accomodation.size }}</td>
-                <td>{{ accomodation.price }}</td>
+                <td>{{ accomodation.size }}m<sup>2</sup></td>
+                <td>{{ accomodation.price }}€</td>
                 <td>{{ accomodation.description }}</td>
-
-
-
-
 
                 <td>
                     <a class="btn btn-info " href="{{ path('accomodation_show', {'id': accomodation.id}) }}"> Voir </a>
@@ -40,14 +34,15 @@
             </tr>
         {% else %}
             <tr>
-                <td colspan="4">no records found</td>
+                <td>no records found</td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
     <a class="btn btn-primary" href="{{ path('accomodation_new') }}">Créer un nouveaux</a>
-        <a class="btn btn-warning" href="{{ path('user_index') }}"> Nos Réservations</a>
+        <a class="btn btn-warning" href="{{ path('user_index') }}">Les utilisateurs</a>
         <a class="btn btn-info" href="{{ path('booking_index') }}">Nos logements</a>
     </section>
+    {% endif %}
 {% endblock %}
