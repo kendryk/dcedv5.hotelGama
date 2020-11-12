@@ -15,15 +15,24 @@ use Symfony\Component\Routing\Annotation\Route;
  */
 class AccomodationController extends AbstractController
 {
-    ///**
-    /* * @Route("/", name="accomodation_index", methods={"GET"})
+     /**
+     /* @Route("/", name="accomodation_index")
      */
-    /*public function index(AccomodationRepository $accomodationRepository): Response
+    public function index(AccomodationRepository $accomodationRepository): Response
     {
         return $this->render('accomodation/index.html.twig', [
             'accomodations' => $accomodationRepository->findAll(),
         ]);
-    } */
+    }
+    /**
+    /* @Route("/all", name="accomodation_all" )
+     */
+    public function page2(AccomodationRepository $accomodationRepository): Response
+    {
+        return $this->render('accomodation/all.html.twig', [
+            'accomodations' => $accomodationRepository->findAll(),
+        ]);
+    }
 
 
     //**
@@ -62,7 +71,15 @@ class AccomodationController extends AbstractController
     }
 
 
-
+    //**
+    // * @Route("/new", name="accomodation_new", methods={"GET"})
+   //  */
+   /* public function accomodations(Accomodation $accomodation): Response
+    {
+        return $this->render('accomodation/new.html.twig', [
+            'accomodation' => $accomodation,
+        ]);
+    }*/
 
     //**
     // * @Route("/{id}/edit", name="accomodation_edit", methods={"GET","POST"})

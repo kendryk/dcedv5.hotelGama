@@ -8,10 +8,13 @@
     <img src="{{ asset('uploads/'~ accomodation.photo) }}" class="img-responsive" alt="Gamma Hotel">
 </section>
 
+
 <section class="container room-content">
     <article class="room-description">
         <div class="room-description-images">
+
             {% for photo in accomodation.photos %}
+
                 <img src="{{ asset('uploads/'~ photo.filename) }}" class="img-responsive" alt="{{ photo.alt }}">
             {% endfor %}
 
@@ -34,7 +37,21 @@
                 {% endfor %}
 
             </ul>
-            <form class="form-booking">
+
+
+
+            <form class="form-booking" method='GET' autocomplete="off"
+
+                  action= {% if app.user %}
+
+                  "{{ path('accomodation_show', {id:app.user.id}) }}"
+
+                    {% else %}
+
+                        "{{ path('app_login') }}"
+
+                    {% endif %}>
+
                 <fieldset>
                     <legend>Réservation</legend>
                     <div class="form-group">
@@ -51,6 +68,8 @@
                     </button>
                 </fieldset>
             </form>
+
+
         </div>
     </article>
 </section>

@@ -1,42 +1,54 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}User{% endblock %}
+{% block title %}{{ app.user.uName }}{% endblock %}
 
 {% block body %}
-    <h1>User</h1>
 
-    <table class="table">
-        <tbody>
-            <tr>
-                <th>Id</th>
-                <td>{{ user.id }}</td>
-            </tr>
+<section class="page-header home-header container">
+    <img src="{{ asset ('images/home-header-bg.jpg') }}" class="img-responsive" alt="Gamma Hotel">
+</section>
+
+<section class="container home-content ">
+    <h1>{{ app.user.uName }}</h1>
+
+    <div class="container grid grid-rooms">
+        <table class="table">
+            <tbody>
+
             <tr>
                 <th>Email</th>
                 <td>{{ user.email }}</td>
             </tr>
+
             <tr>
-                <th>Roles</th>
-                <td>{{ user.roles ? user.roles|json_encode : '' }}</td>
-            </tr>
-            <tr>
-                <th>Password</th>
-                <td>{{ user.password }}</td>
-            </tr>
-            <tr>
-                <th>First_name</th>
+                <th>Nom de famille</th>
                 <td>{{ user.firstName }}</td>
             </tr>
             <tr>
-                <th>Last_name</th>
+                <th>Prénom</th>
                 <td>{{ user.lastName }}</td>
             </tr>
-        </tbody>
-    </table>
+            </tbody>
+        </table>
 
-    <a href="{{ path('user_index') }}">back to list</a>
 
-    <a href="{{ path('user_edit', {'id': user.id}) }}">edit</a>
 
-    {{ include('user/_delete_form.html.twig') }}
+
+    {% if is_granted('ROLE_ADMIN') %}
+        <h2> Administrator </h2>
+
+        <a href="{{ path('user_index') }} ">
+            <h2> INDEX </h2> </a>
+
+
+    {% elseif is_granted('ROLE_USER') %}
+        <h2> Utilisateur </h2>
+    {% else %}
+        <h2> Anonymous </h2>
+    {% endif %}
+
+    </div>
+
+
+</section>
 {% endblock %}

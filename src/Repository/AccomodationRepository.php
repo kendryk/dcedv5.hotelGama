@@ -20,7 +20,6 @@ class AccomodationRepository extends ServiceEntityRepository
     }
 
 
-
     public function findAccomodations()
     {
         $qb = $this->createQueryBuilder('a'); // requete SQL : SELECT * ROM Accomodation AS a
@@ -31,15 +30,34 @@ class AccomodationRepository extends ServiceEntityRepository
         ->innerJoin('a.type', 'type') // INNER JOIN type ON type.id = Accomodation.type_id
         ->innerJoin('a.category', 'category') // INNER JOIN type ON category.id = Accomodation.category_id
         ->innerJoin('a.amenity', 'amenity') // INNER JOIN type ON amenity.id = Accomodation.amenity_id
-
         ;
-
 
         return $qb
             ->getQuery()
             ->getResult();
     }
 
+    //Récuperer la liste des logments avec la barre de recherche(homepage)
+    public function findByPrice($type, $prixMin, $prixMax)
+    {
+        $qb = $this->createQueryBuilder('a');
+
+        $qb = $qb-> addSelect('type')  // SELECT a.*,type.*
+
+            -> innerJoin('a.type', 'type') // INNER JOIN type ON type.id = Accomodation.type_id
+            -> andWhere('type.name = :type')
+            -> setParameter('type', $type)
+
+            -> andWhere('a.price BETWEEN :min AND :max')
+            -> setParameter('min', $prixMin)
+            -> setParameter('max', $prixMax) ;
+            //->setMaxResults(10)
+
+          return $qb
+              ->getQuery()
+              ->getResult()
+        ;
+    }
 
 
 

@@ -20,6 +20,10 @@ h1 {
   text-decoration-color: #e6ba0f;
 }
 
+a {
+  text-decoration: none;
+}
+
 .button {
   display: flex;
   align-items: center;
@@ -266,3 +270,24 @@ ul.room-features {
   }
 }
 
+/* BOOTSTRAP MAISON */
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+a {
+  text-decoration: none;
+}

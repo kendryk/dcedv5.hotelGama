@@ -42,7 +42,7 @@
                     <a href="#">Actualités</a>
                 </li>
                 <li>
-                    <a href="#">Nos Logements</a>
+                    <a href="{{ path('accomodation_all') }}">Nos Logements</a>
                 </li>
                 <li>
                     <a href="#">Contact</a>
@@ -50,16 +50,12 @@
 
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-user"></i>
-                        Profil
 
-                    </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
                         {% if app.user %}
 
-                            <a class="dropdown-item" href="profile.html">
+                            <a class="dropdown-item" href="{{ path('user_show', {id:app.user.id}) }}">
                                 <i class="fa fa-user"></i>
                                 Mon Compte
                             </a>

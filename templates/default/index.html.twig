@@ -12,17 +12,55 @@
     <section class="container home-content">
         {% if app.user %}
 
-        <h1>Bienvenue   {{ app.user.uName }} à l'hotel Gamma</h1>
+        <h1>Bienvenue {{ app.user.uName }} à l'hotel Gamma</h1>
         {% else %}
             <h1>Bienvenue à l'hotel Gamma</h1>
         {% endif %}
 
 
-        {{ render(controller(
-            'App\\Controller\\TypeController::allMenu'
-        )) }}
+          <form class="form-search" action= "{{ path ('homepage')}}" method='GET' autocomplete="off">
+            <div class="form-group">
+                <label for="search-type">Type</label>
+
+                <select name= "type_name"  id="search-type">
+
+                    {% for type in types %}
+
+                        <option value = "{{ type.name }}"
+                            {% if type.name == typeSelected %}
+                                selected
+                            {% endif %}>
+                            {{ type.name }}
+
+                        </option>
+                    {% endfor %}
+
+                </select>
+            </div>
 
 
+                  <div class="form-group">
+                      <label for="prixMin">Min</label>
+                      <input type="number" name= "prixMin" id="prixMin" min="0"  value="{{ prixMin }}" placeholder="0">
+                  </div>
+
+                  <div class="form-group">
+                      <label for="prixMax">Max</label>
+                      <input type="number" name= "prixMax" id="prixMax"  min="0"  value="{{ prixMax }}"  placeholder="200">
+                  </div>
+
+              {% if  (  prixMin <= prixMax ) %}
+                  Votre Recherche est Validé
+                  {% else %}
+              <p>Erreur! le prix min doit être supérieur au prix maximum</p>
+              {% endif %}
+
+            <button type="submit" class="button button-primary">
+                <i class="fa fa-search"></i>
+                Rechercher
+            </button>
+
+        </form>
 
         <h2>Découvrez nos chambres</h2>
         <div class="grid grid-rooms">
@@ -51,6 +89,10 @@
                     </a>
                 </footer>
             </article>
+            {% else %}
+
+                <p> Aucun éléments trouver. <br>
+                Veuillez réinitialisez votre demande. </p>
 
             {% endfor %}
         </div>
