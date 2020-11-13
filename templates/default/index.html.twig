@@ -50,10 +50,16 @@
                       <input type="number" name= "prixMax" id="prixMax"  min="0"  value="{{ prixMax }}"  placeholder="200">
                   </div>
 
-              {% if  (  prixMin <= prixMax ) %}
-                  Votre Recherche est Validé
+              {% if prixMin is defined and  (  prixMin > prixMax ) %}
+
+                  <p>Erreur! le prix min doit être supérieur au prix maximum</p>
+
+                  {% elseif prixMin and prixMax is defined  %}
+
+                      Votre Recherche est Validé
+
                   {% else %}
-              <p>Erreur! le prix min doit être supérieur au prix maximum</p>
+
               {% endif %}
 
             <button type="submit" class="button button-primary">
