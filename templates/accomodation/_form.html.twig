@@ -1,4 +1,14 @@
 {{ form_start(form) }}
-    {{ form_widget(form) }}
+
+<div class="formulaire">
+
+    {{ form_widget(form, {'attr': {'class': 'm-1'}}) }}
+
+    </div>
+
+
     <button class="btn btn-success">{{ button_label|default('Sauvegarder') }}</button>
+
+
 {{ form_end(form) }}
+

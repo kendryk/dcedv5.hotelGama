@@ -83,7 +83,7 @@ class AccomodationController extends AbstractController
      *
      */
 
-    public function new(Request $request, SluggerInterface $slugger ): Response
+    public function new(Request $request, SluggerInterface $slugger): Response
     {
         $accomodation = new Accomodation();
 
@@ -93,7 +93,7 @@ class AccomodationController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
 
-            $pictureFile = $form->get('pictureFile')->getData();
+            $pictureFile = $form->get('photo')->getData();
 
             if ($pictureFile) {
                 $originalFilename = pathinfo($pictureFile->getClientOriginalName(), PATHINFO_FILENAME);
@@ -127,9 +127,9 @@ class AccomodationController extends AbstractController
         ]);
     }
 
-///,requirements={"id"="\d+"}
+
     /**
-    * @Route("/{id}", name="accomodation_show", methods={"GET"})
+    * @Route("/{id}", name="accomodation_show", methods={"GET"}, requirements={"id"="\d+"})
      */
     public function show(Accomodation $accomodation): Response
     {
@@ -138,16 +138,6 @@ class AccomodationController extends AbstractController
         ]);
     }
 
-
-    /**
-     * @Route("/new", name="accomodation_new", methods={"GET"})
-    */
-    public function accomodations(Accomodation $accomodation): Response
-    {
-        return $this->render('accomodation/new.html.twig', [
-            'accomodation' => $accomodation,
-        ]);
-    }
 
     /**
      * @Route("/{id}/edit", name="accomodation_edit", methods={"GET","POST"})

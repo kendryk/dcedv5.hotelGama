@@ -39,7 +39,7 @@
 
                 </ul>
 
-                {# TODO FAIRE LA Permettre aux internautes d'effectuer une réservation en ligne (connexion nécessaire) #}
+                {# do FAIRE LA Permettre aux internautes d'effectuer une réservation en ligne (connexion nécessaire) #}
 
                 {% if is_granted('ROLE_ADMIN') or is_granted('ROLE_USER') %}
                     <form class="form-booking" method='GET' autocomplete="off" action = "{{ path('newAccomodation') }}">

@@ -12,10 +12,11 @@
   <component name="ChangeListManager">
     <list default="true" id="af77b01a-a0b1-473d-b446-2419f3098a76" name="Default Changelist" comment="Finalisation du projet, modification partie administrateur en ajoutant photo edit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/AccomodationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AccomodationController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form/AccomodationType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/AccomodationType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/accomodation/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accomodation/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/accomodation/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accomodation/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/accomodation/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accomodation/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +193,7 @@
       <workItem from="1604930119387" duration="67073000" />
       <workItem from="1605030324947" duration="36766000" />
       <workItem from="1605111303475" duration="391000" />
-      <workItem from="1605112332997" duration="73585000" />
+      <workItem from="1605112332997" duration="79951000" />
     </task>
     <task id="LOCAL-00001" summary="Installation">
       <created>1604935452828</created>
@@ -299,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605220834479</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Finalisation du projet, modification partie administrateur en ajoutant photo edit">
+      <created>1605223054071</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1605223054071</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,14 +363,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="452" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1605000548388" />
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605220569551">
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605255196686">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1605220569551" />
-    <state x="429" y="87" key="NewPhpClassDialog" timestamp="1605128782231">
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1605255196686" />
+    <state x="429" y="87" key="NewPhpClassDialog" timestamp="1605257467852">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="429" y="87" key="NewPhpClassDialog/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1605128782231" />
+    <state x="429" y="87" key="NewPhpClassDialog/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1605257467852" />
     <state x="451" y="66" key="RollbackChangesDialog" timestamp="1604935419959">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -371,10 +379,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1604994593618" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1605220835214">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1605223057185">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1605220835214" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-330.1280.984@0.0.1366.728" timestamp="1605223057185" />
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604930518739">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
